@@ -4,11 +4,11 @@ body{
   margin: 0;
   padding: 0;
   font-family: 'open sans', sans-serif;
-  min-width: 36em;
+
 }
 
 .maindiv{
-  margin: 0 2em 2em 2em;
+  margin: 0 5vw;
 }
 
 
@@ -243,21 +243,44 @@ input[type=range]:focus::-ms-fill-upper {
   padding: 1em;
 }
 
-.subscore{
-  width: 33%;
-  min-width: 8em;
-  margin: 0 0.3% 0.3% 0;
-  background-color: #ddd;
-  float: left;
+.subscore-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.subscore > h3{
-  color: #707070;
-  font-size: 1em;
-  padding: 0.5em 0 0;
-  margin: 0;
-  text-align: center;
+.subscore{
+  width: 32%;
+  margin: 0 0.8vw 0.8vw 0;
+  box-sizing: border-box;
+  background-color: #ddd;
+  margin: 1vw 0;
+
+
+  &:first-child, &:last-child{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .c100{
+    font-size: 25vw;
+    float: none;
+    margin: 0 auto;
+  }
+
+  h3{
+    color: #707070;
+    font-size: 2.5vw;
+    padding: 0.5em 0 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .scoreInnerSmall{
+    padding: 10px 0;
+  }
 }
+
 
 .scoreMain{
   background-color: #ddd;
@@ -265,19 +288,12 @@ input[type=range]:focus::-ms-fill-upper {
   width:100%;
   padding: 2em;
   margin-bottom: 1em;
-  min-width: 27em;
 }
 
 .scoreInnerBig{
   width: 17em;
   height: 17em;
   margin: 0 auto;
-}
-
-.scoreInnerSmall{
-  width: 8.5em;
-  height: 8.5em;
-  margin: 1em auto;
 }
 
 .statusSmall{

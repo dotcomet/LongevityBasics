@@ -18,6 +18,7 @@
   </p>
 
   <h2>Your Longevity Score</h2>
+
   <div class="scoreMain">
     <div class="scoreInnerBig">
       <div class="c100 p{{scoreForeverHealthy}} {{colorForeverHealthy}} big">
@@ -30,8 +31,9 @@
     </div>
   </div>
 
-  <a href="{{pathFor 'nutrition'}}" >
-    <div class="subscore">
+  <div class="subscore-wrapper">
+
+    <a class="subscore" href="{{pathFor 'nutrition'}}" >
       <h3>Nutrition</h3>
       <div class="scoreInnerSmall">
         <div class="c100 p{{scoreNutrition}} {{colorNutrition}}">
@@ -42,11 +44,9 @@
           </div>
         </div>
       </div>
-    </div>
-  </a>
+    </a>
 
-  <a href="{{pathFor 'workout'}}" >
-    <div class="subscore">
+    <a class="subscore" href="{{pathFor 'workout'}}" >
       <h3>Workout</h3>
       <div class="scoreInnerSmall">
         <div class="c100 p{{scoreWorkout}} {{colorWorkout}}">
@@ -57,12 +57,10 @@
           </div>
         </div>
       </div>
-    </div>
-  </a>
+    </a>
 
 
-  <a href="{{pathFor 'mentalBalance'}}" >
-    <div class="subscore">
+    <a class="subscore" href="{{pathFor 'mentalBalance'}}" >
       <h3>Mental Balance</h3>
       <div class="scoreInnerSmall">
         <div class="c100 p{{scoreMentalBalance}} {{colorMentalBalance}}">
@@ -73,12 +71,10 @@
           </div>
         </div>
       </div>
-    </div>
-  </a>
+    </a>
 
 
-  <a href="{{pathFor 'detox'}}" >
-    <div class="subscore">
+    <a class="subscore" href="{{pathFor 'detox'}}" >
       <h3>Detox</h3>
       <div class="scoreInnerSmall">
         <div class="c100 p{{scoreDetox}} {{colorDetox}}">
@@ -89,13 +85,11 @@
           </div>
         </div>
       </div>
-    </div>
-  </a>
+    </a>
 
 
 
-  <a href="{{pathFor 'supplements'}}" >
-    <div class="subscore">
+    <a class="subscore" href="{{pathFor 'supplements'}}" >
       <h3>Supplements</h3>
       <div class="scoreInnerSmall">
         <div class="c100 p{{scoreSupplements}} {{colorSupplements}}">
@@ -106,12 +100,10 @@
           </div>
         </div>
       </div>
-    </div>
-  </a>
+    </a>
 
 
-  <a href="{{pathFor 'quantifiedSelf'}}" >
-    <div class="subscore">
+    <a class="subscore" href="{{pathFor 'quantifiedSelf'}}" >
       <h3>Quantified Self</h3>
       <div class="scoreInnerSmall">
         <div class="c100 p{{scoreQuantifiedSelf}} {{colorQuantifiedSelf}}">
@@ -122,12 +114,10 @@
           </div>
         </div>
       </div>
-    </div>
-  </a>
+    </a>
 
 
-  <a href="{{pathFor 'biomarkers'}}" >
-    <div class="subscore">
+    <a class="subscore" href="{{pathFor 'biomarkers'}}" >
       <h3>Blood Markers</h3>
       <div class="scoreInnerSmall">
         <div class="c100 p{{scoreBiomarkers}} {{colorBiomarkers}}">
@@ -138,11 +128,9 @@
           </div>
         </div>
       </div>
-    </div>
-  </a>
+    </a>
 
-  <a href="{{pathFor 'hormones'}}" >
-    <div class="subscore">
+    <a class="subscore" href="{{pathFor 'hormones'}}" >
       <h3>Hormones</h3>
       <div class="scoreInnerSmall">
         <div class="c100 p{{scoreHormones}} {{colorHormones}}">
@@ -153,11 +141,9 @@
           </div>
         </div>
       </div>
-    </div>
-  </a>
+    </a>
 
-  <a href="{{pathFor 'screenings'}}" >
-    <div class="subscore">
+    <a class="subscore" href="{{pathFor 'screenings'}}" >
       <h3>Screenings</h3>
       <div class="scoreInnerSmall">
         <div class="c100 p{{scoreCheckups}} {{colorCheckups}}">
@@ -168,8 +154,9 @@
           </div>
         </div>
       </div>
-    </div>
-  </a>
+    </a>
+  </div>
+  
 
     <div style="clear:both;"></div>
     <h2>Ideas!</h2>

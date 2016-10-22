@@ -1,0 +1,236 @@
+
+<template name="workout">
+
+  <h1>Workout</h1>
+
+
+
+  <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+    <source src="http://www.dotcomet.de/longevity-basics/audio/2_workout_start.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <p>
+    Training for perfect health takes 30 minutes every week.
+    <br>Three principles are important:
+  </p>
+  <ul>
+    <li>strength and frequency of the signal, which the body receives during the work out, determines the anabolic effect (building mode)</li>
+    <li>recovery time after a sufficient signal is long - after a good training the body deals with adaption for at least a week. Another signal in during this recovery period is not necessary</li>
+    <li>optimal training consists of the lowest necessary input to achive the desired result </li>
+  </ul>
+  <p>
+    Baseline training (weekly):
+  </p>
+  <ul>
+    <li>20 minute high intensity strenght training</li>
+    <li>2 x 4 min tabata sprint training</li>
+  </ul>
+<p>
+  Additional (and optional): anything that is fun and trains balance, flexibility, mental clarity and range of motion. But only for fun and with sufficient attention to recovery from baseline training.
+  <br>This applies to anyone. Actually the older a person is, when she starts high intensity workouts, the bigger the positive effect, compared to baseline.
+  Try it for 3 months: Every week one super high intensity weight training, with a serious set of squats, and two uncompromising sprint sessions.
+  <br>Rest of the time: fun and games, active recovery, meditation, relaxation, easy.
+</p>
+
+
+
+
+<h2>Your Workout Score</h2>
+<div class="scoreMain">
+  <div class="scoreInnerBig">
+    <div class="c100 p{{scoreWorkout}} {{colorWorkout}} big">
+      <span>{{scoreWorkout}}%</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="accordion">
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreWst}} {{colorWst}} small">
+        <span>{{scoreWst}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Strenght Training</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/2_strength_training.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <p>
+      A high intensity strength training acts as an anabolic signal, which puts the body into 'building mode':
+    </p>
+    <ul>
+      <li>higher levels of growth hormones</li>
+      <li>increased resting metabolic rate</li>
+      <li>increased insulin sensitivity</li>
+      <li>improved blood lipids</li>
+      <li>lower blood pressure</li>
+      <li>improved mood and cognitive function</li>
+    </ul>
+    <p>
+      The recovery period, during which the metabolism reacts to the signal, is one week or above. During this time another anabolic signal is not overly effective - the body is in b'uilding mode' anyway.
+    </p>
+    <p>
+      A workout consists of weight training ...
+    </p>
+<ul>
+  <li>a lot of weight (5 reps in good form)</li>
+  <li>only one set for each muscle group</li>
+  <li>for all muscle groups, starting with the big muscles (squats, deadlifts); then one push exercise; one pull exercise; and abs to complete muscle failure</li>
+  <li>20 mins eve</li>
+</ul>
+<p>
+  'Complete muscle failure' is key and determines the strenght/intensity of the anabolic signal.
+</p>
+<p>
+  Cardiovascular health and aerobic performance increase too, through:
+</p>
+<ul>
+  <li>high intensity performance during the work out</li>
+  <li>the metabolic processes during recovery</li>
+  <li>the higher metabolic rate through increased muscle mass</li>
+</ul>
+<br><br>
+<strong>Source:</strong>
+<ul>
+  <li>Doug McGuff - 'Body by Science'
+    <br>(Book, 2008 - and good talks on youtube)
+</li>
+</ul>
+    <div class="sliderdiv">
+      <strong>Do you bring all you muscle fibres to complete failure once every week and do feel sore after?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreWst}}" id="scoreWst" name="colorWst">
+      <div class="scoreNum">
+        {{scoreWst}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreWs}} {{colorWs}} small">
+        <span>{{scoreWs}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Sprints</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/2_sprints.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      Short high intensity sprint workouts (4minutes, or even 1 min. sprints) increase anaerobic and aerobic function more than 45 minute mid-intensity 'cardio'-trainings.
+      <br>A workout consist of 4 minutes of alternating high intensity performance and rest - either 30/30 secs or 20/10 secs, 8 repetitions in tabata.
+      <br>Possible movements:
+    </p>
+    <ul>
+      <li>burpees</li>
+      <li>cycle ergometer</li>
+      <li>rowing</li>
+      <li>swimming</li>
+    </ul>
+    <br><br>
+    <strong>Sources:</strong>
+    <ul>
+      <li>Mark's Daily Apple - What Are Tabata Sprints?</li>
+      <li>Chris Kresser - How to lose weight and prevent diabetes in 6 minutes a week</li>
+    </ul>
+
+    <div class="sliderdiv">
+      <strong>Do you sprint at least twice a week?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreWs}}" id="scoreWs" name="colorWs">
+      <div class="scoreNum">
+        {{scoreWs}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreWmlm}} {{colorWmlm}} small">
+        <span>{{scoreWmlm}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Move Like A Monkey</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/2_move_like_a_monkey.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      Hanging, swinging and moving like a monkey builds balance and protects the delicate mechanics of our spine.
+    </p>
+
+
+    <div class="sliderdiv">
+      <strong>Do you train the monkey in you?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreWmlm}}" id="scoreWmlm" name="colorWmlm">
+      <div class="scoreNum">
+        {{scoreWmlm}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreWcys}} {{colorWcys}} small">
+        <span>{{scoreWcys}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Cardio, Yoga & Other Sports</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/2_cardio_yoga_and_other_sports.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      One high intensity strength training and two short sprint workouts are sufficient as baseline training. All other activities should be fun and train flexibility, balance, motor skills and a range of movements.
+      <br>In any case they should respect the body's recovery time from baseline training and serve active relaxation.
+    </p>
+
+    <div class="sliderdiv">
+      <strong>Do you take it easy and do you not overwork yourself with other sports. Do you train balance, movement and flexibility in a way that respects the necessary recovery time?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreWcys}}" id="scoreWcys" name="colorWcys">
+      <div class="scoreNum">
+        {{scoreWcys}} / 100
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+</template>

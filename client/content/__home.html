@@ -1,0 +1,188 @@
+
+
+
+<template name="home">
+    <h1>Longevity Basics</h1>
+
+  <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+    <source src="http://www.dotcomet.de/longevity-basics/audio/0_intro.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <h2>Welcome!</h2>
+  <p>
+    This your app for a state of the art health and longevity strategy: How to operate a human body...
+  </p>
+  <p>
+    Please play the audio files and update your Longevity-Score. How much of the available science and technology are you using to stay happy and healthy?<br>
+  </p>
+
+  <h2>Your Longevity Score</h2>
+  <div class="scoreMain">
+    <div class="scoreInnerBig">
+      <div class="c100 p{{scoreForeverHealthy}} {{colorForeverHealthy}} big">
+        <span>{{scoreForeverHealthy}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="{{pathFor 'nutrition'}}" >
+    <div class="subscore">
+      <h3>Nutrition</h3>
+      <div class="scoreInnerSmall">
+        <div class="c100 p{{scoreNutrition}} {{colorNutrition}}">
+          <span>{{scoreNutrition}}%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a href="{{pathFor 'workout'}}" >
+    <div class="subscore">
+      <h3>Workout</h3>
+      <div class="scoreInnerSmall">
+        <div class="c100 p{{scoreWorkout}} {{colorWorkout}}">
+          <span>{{scoreWorkout}}%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+
+
+  <a href="{{pathFor 'mentalBalance'}}" >
+    <div class="subscore">
+      <h3>Mental Balance</h3>
+      <div class="scoreInnerSmall">
+        <div class="c100 p{{scoreMentalBalance}} {{colorMentalBalance}}">
+          <span>{{scoreMentalBalance}}%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+
+
+  <a href="{{pathFor 'detox'}}" >
+    <div class="subscore">
+      <h3>Detox</h3>
+      <div class="scoreInnerSmall">
+        <div class="c100 p{{scoreDetox}} {{colorDetox}}">
+          <span>{{scoreDetox}}%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+
+
+
+  <a href="{{pathFor 'supplements'}}" >
+    <div class="subscore">
+      <h3>Supplements</h3>
+      <div class="scoreInnerSmall">
+        <div class="c100 p{{scoreSupplements}} {{colorSupplements}}">
+          <span>{{scoreSupplements}}%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+
+
+  <a href="{{pathFor 'quantifiedSelf'}}" >
+    <div class="subscore">
+      <h3>Quantified Self</h3>
+      <div class="scoreInnerSmall">
+        <div class="c100 p{{scoreQuantifiedSelf}} {{colorQuantifiedSelf}}">
+          <span>{{scoreQuantifiedSelf}}%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+
+
+  <a href="{{pathFor 'biomarkers'}}" >
+    <div class="subscore">
+      <h3>Blood Markers</h3>
+      <div class="scoreInnerSmall">
+        <div class="c100 p{{scoreBiomarkers}} {{colorBiomarkers}}">
+          <span>{{scoreBiomarkers}}%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a href="{{pathFor 'hormones'}}" >
+    <div class="subscore">
+      <h3>Hormones</h3>
+      <div class="scoreInnerSmall">
+        <div class="c100 p{{scoreHormones}} {{colorHormones}}">
+          <span>{{scoreHormones}}%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a href="{{pathFor 'screenings'}}" >
+    <div class="subscore">
+      <h3>Screenings</h3>
+      <div class="scoreInnerSmall">
+        <div class="c100 p{{scoreCheckups}} {{colorCheckups}}">
+          <span>{{scoreCheckups}}%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+
+    <div style="clear:both;"></div>
+    <h2>Ideas!</h2>
+    <p>
+      The future will be amazing! And it will probably arrive sooner than you think. Here are some ideas about what's coming, how we may be the first generation to overcome the biological necessity of dying and where all this is headed. This is such an awesome time to be alive.
+    </p>
+    <a href="{{pathFor 'fivehundred'}}" class="textlink"> >>Yes, 500 Years!</a><br>
+    <a href="{{pathFor 'future'}}" class="textlink"> >>The Future!</a><br>
+
+    <p style="margin-top:2em;">
+      Please check out the disclaimer, too - and a few words about the scientific method.
+    </p>
+    <a href="{{pathFor 'disclaimer'}}" class="textlink">  >>Method & Disclaimer</a><br>
+    <a href="{{pathFor 'contact'}}" class="textlink">  >>Contact and Impressum</a><br>
+
+</template>

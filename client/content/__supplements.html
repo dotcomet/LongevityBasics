@@ -1,0 +1,523 @@
+
+<template name="supplements">
+  <h1>Supplements</h1>
+
+  <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+    <source src="http://www.dotcomet.de/longevity-basics/audio/5_supplements_start.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <p>
+    Some micronutrients are hard to obtain through a normal diet, some deficiencies are quite common. Soil depletion as a consequence of industrial farming increases the issue. This can be addressed with basic supplements.
+  </p>
+  <p>
+    Additionally there is good evidence, that an abundance of certain vitamins and minerals leads to an upregulation of declining metabolic processes, especially gene repair mechanisms. From a longevity point of view 'recommended daily allowances' (RDA) are not sufficient for the elderly, and many studies suggest, that aggressive supplementation can delay the onset of age related problems (longevity supplements).
+  </p>
+  <p>
+    A few drugs have shown positive effects too - some have been prescribed to a lot of patients over a long period of time, which makes it reasonable to assume that they are safe (longevity drugs).
+  </p>
+  <p>
+    The best strategy to achieve perfect nutritional status is a diet of nutrient dense, whole foods - due to the complex interplay of the various minerals and vitamins.
+    <br>Some types of food are much more nutrient dense than others (superfoods).
+  </p>
+  <br><br>
+  <strong>Sources:</strong>
+  <ul>
+    <li>examine.com</li>
+    <li>lef.com</li>
+    <li>Linus Pauling Institute - Micronutrient Information Center</li>
+    <li>Ray Kurzweil, Terry Grossman - Transcend (Book, 2010)</li>
+    <li>Bruce Ames - 'The Triage Theory'</li>
+    <li>labdoor.com</li>
+  </ul>
+
+<h2>Your Supplements Score</h2>
+<div class="scoreMain">
+  <div class="scoreInnerBig">
+    <div class="c100 p{{scoreSupplements}} {{colorSupplements}} big">
+      <span>{{scoreSupplements}}%</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="accordion">
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreSbs}} {{colorSbs}} small">
+        <span>{{scoreSbs}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Basic Supplements</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/5_basic_supplements.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      The micronutrients in this list ...
+    </p>
+
+    <ul>
+      <li>are difficult to obtain in sufficient quantities with a normal diet</li>
+      <li>show a high chance of deficiency</li>
+      <li>are affected by soil depletion</li>
+      <li>show low or no toxicity</li>
+      <li>are likely to be beneficial in doses higher than the RDA</li>
+    </ul>
+
+    <p>
+      Vitamin D
+    </p>
+    <ul>
+      <li>big chance of deficiency (&gt;50% in some parts of the world)</li>
+      <li>blood levels of 25-hydroxy vitamin D between 30-80 ng/ml</li>
+      <li>works in combination with Vitamin A and K (-&gt; fish oil)</li>
+      <li>RDA D: 600 IU
+        <br>(Vitamin A: 2500 IU; Vitamin K: 120μg)</li>
+    </ul>
+    <p>
+      Fish Oil
+    </p>
+    <ul>
+      <li>omega-3 (EPA, DHA)</li>
+      <li>high vitamin with olive oil or butter oil with vitamin A, D, K
+      <br>i.e. 'green pasture', 'extra virgin cod liver oil'</li>
+      <li>can easily go rancid (like all polyunsaturated fats) and needs refrigeration</li>
+      <li>5g / day - monthly cost approx. 35 $/€</li>
+    </ul>
+
+    <p>
+      Magnesium
+    </p>
+    <ul>
+      <li>one of the most abundant minerals in the body</li>
+      <li>involved in pretty much everything (DNA repair mechanisms - which get shut down first, when magnesium is low)</li>
+      <li>affected by soil depletion</li>
+      <li>lowered through cortisol</li>
+      <li>70% of americans do not get the RDA</li>
+      <li>RDA: 400mg - monthly cost less than 2 $/€</li>
+    </ul>
+    <p>
+      Zinc
+    </p>
+    <ul>
+      <li>important for many enzymatic reactions</li>
+      <li>not easy to optain in sufficient amounts</li>
+      <li>can not be stored - daily intake necessary</li>
+      <li>affected by soil depletion</li>
+      <li>25mg should not be exceeded, &gt;100mg toxic</li>
+      <li>25% of world population affected by zinc deficiency</li>
+      <li>RDA: 10mg - monthly cost less than 3 $/€ </li>
+    </ul>
+    <p>
+      Vitamin C
+    </p>
+    <ul>
+      <li>involved in many enzymatic reactions</li>
+      <li>important anti-oxidant, regulating other anti-oxidants</li>
+      <li>30% of Americans show suboptimal levels</li>
+      <li>higher intake than RDA probably beneficial (supports cardio-vascular and immune function, anti-cancer)</li>
+      <li>very low toxicity; no adverse effects, even in high doses</li>
+      <li>RDA 90mg - monthly cost less than 2 $/€</li>
+    </ul>
+    <p>
+      Vitamin B complex
+    </p>
+    <ul>
+      <li>b12 not in plant based diet, often in the lower range - leads to neurological symptoms</li>
+      <li>higher intake than RDA likely to be beneficial for all B-vitamins</li>
+      <li>RDA B12: 2,4μg - monthly cost for B-complex less than 5 $/€</li>
+    </ul>
+    <br><br>
+    <strong>Sources:</strong>
+    <ul>
+      <li>Linus Pauling Institute - Micronutrient Information Center</li>
+      <li>Rhonda Patrick - 'The Vitamin D Sweet Spot And It's Relationship To Aging'</li>
+    </ul>
+
+    <div class="sliderdiv">
+      <strong>Do you know the basic micronutrients with high probability of suboptimal levels? Do you ensure sufficient intake?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreSbs}}" id="scoreSbs" name="colorSbs">
+      <div class="scoreNum">
+        {{scoreSbs}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreSs2}} {{colorSs2}} small">
+        <span>{{scoreSs2}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Longevity Supplements</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/5_longevity_supplements.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      There is good evidence that some micronutrients are desirable in higher doses than the RDA to support declining enzymatic functions with age and to counteract metabolic effects of genetic mutations.The RDA is not optimal for older individuals - aggressive supplementation probably delays the onset of age related diseases and is more likely to be beneficial than neutral or harmful.
+    </p>
+
+    <ul>
+      <li>13 essential vitamins, 16 essential minerals, 9 essential amino acids, 2 essential fatty acids</li>
+      <li>water soluble vitamins can not be stored and need to be replenished continuously (vitamin C, B)</li>
+      <li>fat soluble vitamins can be stored and and may be toxic in high doses</li>
+    </ul>
+    <p>
+      Vitamin C
+    </p>
+    <ul>
+      <li>most important water soluble anti-oxidant</li>
+      <li>safe in high doses</li>
+      <li>optimal dose higher than RDA of 90mg</li>
+      <li>monthly cost less than 5 $/€ </li>
+    </ul>
+    <p>
+      Vitamin B (1, 2, 3, 5, 6, 7, 9, 12)
+    </p>
+    <ul>
+      <li>supplemented as B-complex</li>
+      <li>required for a wide range of processes, important cofactor</li>
+      <li>water soluble, low toxicity</li>
+      <li>monthly cost for B-complex less than 5 $/€</li>
+    </ul>
+    <p>
+      Vitamin A
+    </p>
+    <ul>
+      <li>fat soluble</li>
+      <li>important anti-oxidant</li>
+      <li>important for skin and bone health</li>
+      <li>optimal dose higher than RDA of 2500 IU</li>
+      <li>monthly cost for B-complex less than 5 $/€</li>
+    </ul>
+    <p>
+      Vitamin E
+    </p>
+    <ul>
+      <li>fat soluble</li>
+      <li>important anti-oxidant, works with glutathion</li>
+      <li>positive effect on blood lipids</li>
+      <li>optimal dose higher than RDA of 15 IU</li>
+      <li>90% of Americans do not get the RDA</li>
+      <li>monthly cost for mixed tocopherols less than 15 $/€</li>
+    </ul>
+    <p>
+      Essential minerals
+    </p>
+    <ul>
+      <li>sodium, chloride, potassium, calcium, phosphorus, magnesium, sulfur, and the trace minerals iron, zinc, iodine, selenium, copper, manganese, fluoride, chromium, molybdenum, bromine</li>
+      <li>for magnesium, zinq, copper, selenium, manganese and chromium the optimal daily dose seems to be significantly higher than the RDA</li>
+      <li>monthly cost for a multi mineral supplement less than 5 $/€ per month</li>
+    </ul>
+    <p>
+      Coenzyme Q10
+    </p>
+    <ul>
+      <li>antioxidant, involved in the generation of ATP</li>
+      <li>supports mitochondrial function </li>
+      <li>protects against dna damage</li>
+      <li>poorly absorbed in the digestive tract and effects in humans not 100% clear</li>
+      <li>more bioavailable in the form of ubiquinol</li>
+      <li>daily supplementation of 100 miligrams will cost less than 30 $/€ per month</li>
+    </ul>
+    <p>
+      Grapeseed extract
+    </p>
+    <ul>
+      <li>antioxidant, likely to protect against heart disease, cancer, inflammation</li>
+      <li>supply of 100 mg per day costs less than 5 $/€</li>
+    </ul>
+    <p>
+      Milk thisle
+    </p>
+    <ul>
+      <li>liver and kidney support and anti-inflammatory</li>
+      <li>telomerase activator </li>
+      <li>likely to inhibit the mTOR pathway</li>
+      <li>700mg daily will cost less than 15 $/€ per month</li>
+    </ul>
+    <p>
+      Alpha lipoic acid
+    </p>
+    <ul>
+      <li>mayor antioxidant </li>
+      <li>increases insulin sensitivity</li>
+      <li>supports mitochondrial function </li>
+      <li>standard daily dose: 300 mg, less than 5 $/€ per month</li>
+    </ul>
+    <p>
+      L-Carnitine
+    </p>
+    <ul>
+      <li>supports cellular energy metabolism </li>
+      <li>protects the brain by lowering oxidative stress and inflammation</li>
+      <li>500 mg daily, less than 10 $/€ per month</li>
+    </ul>
+    <p>
+      Carnosine
+    </p>
+    <ul>
+      <li>prevents the formation of so AGEs (advanced glycation end products)</li>
+      <li>declines with age </li>
+      <li>500 mg daily, less than 10 $/€ per month</li>
+    </ul>
+    <p>
+      Resveratrol
+    </p>
+    <ul>
+      <li>antioxidant, found in red wine</li>
+      <li>didn't live up to the promised results, but there is still good evidence that it acts as an anti-oxidant</li>
+      <li>mimics the effects of calory restriction</li>
+      <li>250 mg daily, less than 20 $/€</li>
+    </ul>
+    <p>
+      Phosphatidylcholine
+    </p>
+    <ul>
+      <li>maintains healthy cell membranes</li>
+      <li>depletes with age</li>
+      <li>400 mgs daily will cost less than 5 $/€</li>
+    </ul>
+    <p>
+      Probiotics
+    </p>
+    <ul>
+      <li>contain healthy gut bacteria </li>
+      <li>help maintain a balanced gut flora</li>
+      <li>should be taken to counteract the damage of the gut biome through antibiotics</li>
+      <li>thirty day supply costs ~30 $/€</li>
+    </ul>
+    <p>
+      LEF - 'life-extesion mix'
+    </p>
+    <ul>
+      <li>found on lef.com, includes many potentially beneficial substances </li>
+      <li>easy solution to support optimal nutritional status</li>
+      <li>monthly cost: 60 $ / 80€</li>
+    </ul>
+    <div class="sliderdiv">
+      <strong>Do you know about the potential benefits of the various nutrients and do you use them to optimze your nutritional intake?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreSs2}}" id="scoreSs2" name="colorSs2">
+      <div class="scoreNum">
+        {{scoreSs2}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+    <div class="statusSmall">
+        <div class="c100 p{{scoreSps}} {{colorSps}} small">
+          <span>{{scoreSps}}%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+    </div>
+    <h3 class="accordion-toggle">Longevity Drugs/Pharmceuticals</h3>
+    <div class="accordion-content">
+      <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+        <source src="http://www.dotcomet.de/longevity-basics/audio/5_longevity_drugs.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <p>
+        There are a few drugs/pharmaceuticals which have shown longevity promoting effects and are very well researched and tested. They should be taken only after consulting medical doctor.
+      </p>
+      <p>
+        Metformin
+      </p>
+      <ul>
+        <li>diabetes drug, which has been used by  millions of people over more than 6 decades</li>
+        <li>mimics the effects of  caloric restriction </li>
+        <li>increases insulin sensitivity</li>
+        <li>associated with lower rates of cancer and seems beneficial for nearly everyone over 50</li>
+        <li>recommended dose for anti aging purposes: 500mg twice daily</li>
+        <li>monthly cost below 15 $/€</li>
+      </ul>
+      <p>
+        Selegelin
+      </p>
+      <ul>
+        <li>used to treat early symptoms of parkinsons disease and depression</li>
+        <li>has shown longevity effects in mice, unclear if this applies to humans as well</li>
+        <li>ther is good evidence that it protects brain cells and boosts antioxidant enzymes</li>
+        <li>5mg tablets ~3 times a week for anti-aging </li>
+        <li>monthly cost below 50 $/€</li>
+      </ul>
+      <p>
+        Aspirin (low dose)
+      </p>
+      <ul>
+        <li>well researched, because recommended since the 1960s to prevent blood clotting / heart attack and stroke</li>
+        <li>lowers the risk for many cancers and altzheimers disease, due to its anti-inflammatory effects</li>
+        <li>only low dose to prevent irritation of the digestive system</li>
+        <li>baby aspirin (80 mg) daily for anti-aging</li>
+        <li>less than 5 $/€ per month</li>
+      </ul>
+
+      <div class="sliderdiv">
+        <strong>Do you know about the possible benefits of the longevity pharmaceuticals and have you discussed their use with your doctor /nutritionist?</strong>
+        <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreSps}}" id="scoreSps" name="colorSps">
+        <div class="scoreNum">
+          {{scoreSps}} / 100
+        </div>
+      </div>
+    </div>
+
+
+
+        <div class="statusSmall">
+            <div class="c100 p{{scoreSs}} {{colorSs}} small">
+              <span>{{scoreSs}}%</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
+            </div>
+        </div>
+        <h3 class="accordion-toggle">Superfoods</h3>
+        <div class="accordion-content">
+          <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+            <source src="http://www.dotcomet.de/longevity-basics/audio/5_superfoods.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+
+          <p>
+            Superfoods contain a lot more of certain nutrients than other types of foods. Optimal nutritional status requires various different nutrients to work in synergy, whole foods are the best strategy to achieve optimal nutritional values.
+            <br>Included of course are the staple foods of a paleo diet: Dark leaf greens, colorful vegetables, coconut oil, avocados, nuts and seeds, eggs, seafood, meat, fruit.
+            <br>Other foods are specifically high in certain micronutrients - 'natural supplements'. The following selection is sort of a "best of":
+          </p>
+          <p>
+            Matcha tea
+          </p>
+          <ul>
+            <li>ground up green tea leafs</li>
+            <li>huge amounts of antioxidants</li>
+            <li>good evidence that it lowers the risk for certain cancers, heart disease, high cholesterol and insulin resistance</li>
+          </ul>
+          <p>
+            Raw cocoa
+          </p>
+          <ul>
+            <li>powerful antioxidant one of the highest scoring foods in this regard</li>
+            <li>improves cholesterol levels, memory function and increases insulin sensitivity</li>
+            <li>processing of cocoa removes many of the flavenols - raw cocoa nibs are best</li>
+          </ul>
+          <p>
+            Ginkgo balboa
+          </p>
+          <ul>
+            <li>antioxidant, increases blood circulation</li>
+            <li>very likely neuroprotective, used to treat alzheimer's disease</li>
+            <li>gingko is pretty well researched</li>
+          </ul>
+          <p>
+            Turmeric
+          </p>
+          <ul>
+            <li>a spice which contains curcumin</li>
+            <li>increases the antioxidant enzyme profile while decreasing blood pressure</li>
+            <li>decreases inflammation and c-reactive protein (most important marker for inflammation)</li>
+            <li>not absorbed very, needs to be mixed with piperine, which is an ingredient of black pepper</li>
+          </ul>
+          <p>
+            Chia seeds
+          </p>
+          <ul>
+            <li>high in antioxidants, fiber, and micronutrients which are important for bone health</li>
+            <li>decent amount of protein for a plant + some omega3 fatty acids</li>
+            <li>decreases inflammation, lowers blood pressure and improves cholesterol levels</li>
+          </ul>
+          <p>
+            Bone broth
+          </p>
+          <ul>
+            <li>made from chicken, turkey or beef bones, which are cooked for a few hours at low heat</li>
+            <li>contains a lot of minerals (calcium, magnesium, potassium, sulfur, sodium) in a very bioavailable form</li>
+            <li>contains many different amino acids (collagen, gelatine,  proline, ...), building blocks which are needed for bones, skin and hair</li>
+            <li>contains glycene (amino acid needed to produce many hormones and major anti-oxidants and supports healthy liver function</li>
+            <li>lowers inflammation</li>
+            <li>boosts the immune system</li>
+          </ul>
+          <p>
+            Liver and other organ meats
+          </p>
+          <ul>
+            <li>the liver stores micronutrients (Vitamin A, D, B12, K, folic acid, copper, iron, etc.) but does not store toxins</li>
+            <li>very nutritious, significantly higher than muscle meat </li>
+          </ul>
+          <p>
+            Fermented foods
+          </p>
+          <ul>
+            <li>kefir, sauerkraut, kim chi, beet kvass and natto</li>
+            <li>natural probiotics, staple foods for a healthy gut</li>
+            <li>high in micronutrients, with high bio-availability</li>
+          </ul>
+          <p>
+            Resistant starch
+          </p>
+          <ul>
+            <li>found in potatoe starch</li>
+            <li>major prebiotic</li>
+            <li>does not effect insulin and has no caloric value (not digestable)</li>
+            <li>improves insulin sensitivity and metabolic health</li>
+            <li>decreases inflammation, especially in the gut</li>
+          </ul>
+          <p>
+            Psyllium fibre
+          </p>
+          <ul>
+            <li>made from the seeds of the psyllium plant</li>
+            <li>powerful prebiotic</li>
+            <li>70% soluble fibre</li>
+            <li>improves cholesterol levels and gut health</li>
+          </ul>
+          <p>
+            Green plant based powders
+          </p>
+          <ul>
+            <li>'green vibrance', 'organic alpha', 'athletic greens', etc.</li>
+            <li>contain a lot of different plant powders and loads of micronutrients</li>
+          </ul>
+          <div class="sliderdiv">
+            <strong>Have you researched superfoods, do you know which ones may be beneficial for you and do you make your food choices accordingly?</strong>
+            <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreSs}}" id="scoreSs" name="colorSs">
+            <div class="scoreNum">
+              {{scoreSs}} / 100
+            </div>
+          </div>
+        </div>
+
+
+
+</div>
+
+
+</template>

@@ -1,0 +1,567 @@
+
+<template name="hormones">
+  <h1>Hormones</h1>
+
+
+  <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+    <source src="http://www.dotcomet.de/longevity-basics/audio/8_hormones_start.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <p>
+    Bioidentical hormone therapy will likely become another game changer. After maturity our hormone levels decline. An 80 year old man has less than 20% of the free testosterone than a 20 year old. This affects everything. Energy, lean muscle mass, metabolism, ability to recover and repair.
+    <br>Hormone levels can easily be upregulated orally or topically.
+    <br>Bioidentical hormones can not be patented, for that reason research within the medical system did not find sufficient funding.
+  </p>
+  <p>
+    What will be the health status of a 70 year, who has the hormonal status of a 20 year old?
+  </p>
+  <p>
+    Problems:
+  </p>
+  <ul>
+    <li>hormones work in feedback loops, every intervention potentially influences the whole system</li>
+    <li>some growth hormones may be cancer promoting – it's not likely that they cause cancer, but some may progress faster in the presence of growth signals</li>
+  </ul>
+  <br>
+  <p>
+    Upside:
+  </p>
+  <ul>
+    <li>the natural decline is a given and definitely harmful</li>
+    <li>dropping hormone levels inhibit regenerative processes and likely contribute to higher cancer risk</li>
+  </ul>
+  <br>
+  <p>
+    Means of intervention:
+  </p>
+  <ul>
+    <li>high intensity workouts, fasting, heat-/cold stress </li>
+    <li>supplementation, which prevents insufficiencies and increases levels of precursors</li>
+    <li>hormone replacement therapy with bioidentical hormones, which requires the help of a skilled endocrinologist</li>
+  </ul>
+  <p>
+    Monitoring a few known hormonal KPIs is necessary to learn about existing imbalances as early as possible
+  </p>
+  <p>
+    Hormones are complex and have a profound impact – all information in this chapter should be viewed as ideas for further research. Any experimentation in this field requires the supervision of a knowledgable (bioidentical) hormone expert.
+  </p>
+  <br><br>
+  <strong>Sources:</strong>
+  <ul>
+    <li>Jeffrey Dach, M.D. - 'Bioidentical Hormones 101' - (Book, 2011)</li>
+    <li>Rüdiger Schmidt Homm, Sabine Homm - ''Handbuch Anti Aging” (Book, 2008)</li>
+    <li>Ray Kurzweil, Terry Grossman - 'Transcend' (Book, 2009)</li>
+  </ul>
+
+<h2>Your Hormones Score</h2>
+<div class="scoreMain">
+  <div class="scoreInnerBig">
+    <div class="c100 p{{scoreHormones}} {{colorHormones}} big">
+      <span>{{scoreHormones}}%</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="accordion">
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreHm}} {{colorHm}} small">
+        <span>{{scoreHm}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Melatonin</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/8_melatonin.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      In many countries melatonin is treated like a supplement and available without prescription, but it is actually one of the high level signaling hormones. With age levels decline, which increasingly becomes problematic.
+    </p>
+    <ul>
+      <li>regulates sleep</li>
+      <li>has shown life prolonging effects in rodents, there is good evidence that this applies to humans as well</li>
+      <li>neuroprotective</li>
+      <li>associated with lower cancer risk</li>
+      <li>lower inflammation</li>
+      <li>upregulated immune function </li>
+      <li>powerful antioxidant</li>
+      <li>not addictive</li>
+      <li>no known toxicity</li>
+      <li>not associated with negative feedback</li>
+    </ul>
+    <p>
+      A daily dose of 1-5 mg (just before sleep)costs less that 10 $/€ per month.
+    </p>
+    <p>
+      It is not recommended for people under 30. But for everyone over 50 there is good evidence that counteracting declining melatonin levels protects against many diseases of aging.
+    </p>
+    <br><br>
+    <strong>More info:</strong>
+    <ul>
+      <li>lifeextension - 'beyond sleep'</li>
+    </ul>
+
+    <div class="sliderdiv">
+      <strong>Do you know the benefits of melatonin, do you measure blood levels every year and have you discussed supplementation with an endocrinologist to counteract age related decline?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreHm}}" id="scoreHm" name="colorHm">
+      <div class="scoreNum">
+        {{scoreHm}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreHth}} {{colorHth}} small">
+        <span>{{scoreHth}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Thyroid Hormones</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/8_thyroid.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      The thyroid hormones are the main signaling molecules for the metabolism.
+      <br>Thyroid issues are associated with low immune function, cardiovascular disease, various metabolic problems. According to the american thyroid association 12% of the american population will develop a thyroid condition in their lifetime and 60% of those affected are unaware. Women have a 5-8 times higher risk.
+      <br>The normal range for TSH is subject of debate - for most a level of below 2,5 mIU/l seems to be optimal.
+      <br>Long term substitution with T3 and T4, seems to be a save procedure.
+    </p>
+    <p>
+      Relevant markers:
+    </p>
+    <ul>
+      <li>TSH (0.5 - 4.7 mIU/l; &lt;2.5 optimal)</li>
+      <li>Free T4 (0.8 -2.8 ng/dl)</li>
+      <li>Free T3 (2.3 - 4.2 pg/dl)</li>
+      <li>Antibodies (TPO, TG)</li>
+    </ul>
+    <p>
+      Cost: ~100€ /100-500$
+    </p>
+
+    <div class="sliderdiv">
+      <strong>Do you know your thyroid moarkers, do you measure them every two years and store them in a spreadsheet to watch changes over time?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreHth}}" id="scoreHth" name="colorHth">
+      <div class="scoreNum">
+        {{scoreHth}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreHd}} {{colorHd}} small">
+        <span>{{scoreHd}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">DHEA</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/8_dhea.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      DHEA is the hormone with the highest concentration in the body and the most abundant precursor hormone. 50% of a man's androgens and 70% of a woman's estrogens are synthesized from DHEA, as well as other steroids and the adrenal hormones.
+      <br>If stress hormones are elevated over a longer period of time, the production of sex hormones may be inhibited, due to DHEA deficiency.
+      <br>Levels decline with age (men: >40; women: >25). At 80 years only 10% of youthful DHEA levels will be present, which inhibits many metabolic processes.
+      <br>It is possible to restore youthful levels (women: men: 150-350 &mu;g/dl, men: 250-450 &mu;g/dl) through supplementation, to increase the production of other hormones in the natural rhythm and balance - unlike direct supplementation.
+    </p>
+    <p>
+      There is good evidence that higher DHEA levels increase ...
+    </p>
+    <ul>
+      <li>insulin sensitivity</li>
+      <li>sex hormone levels</li>
+      <li>mood </li>
+      <li>bone density</li>
+      <li>stress resilience / immune function</li>
+      <li>protection against neurological decline and some forms of cancer</li>
+    </ul>
+    <p>
+      Bioidentical DHEA is freely available as a supplement in most countries. There is still a lot of debate about the effectiveness/risk of DHEA supplementation, but it is quite clear that age related decline is one of the drivers of aging.
+    </p>
+    <p>
+      Some cancers show increased growth in presence of growth hormones, a solid anti cancer prevention strategy and a diet rich in antioxidants is important.
+    </p>
+    <br><br>
+    <strong>Cost:</strong>
+    <ul>
+      <li>under 20$/€ as part of a comprehensive blood test</li>
+      <li>supplementation of 50mg daily will cost less than 10 $/€ per month</li>
+    </ul>
+    <br><br>
+    <strong>Sources:</strong>
+    <ul>
+      <li>lef.com - 'DHEA Restoration Therapy'</li>
+      <li>Rüdiger Schmidt Homm, Sabine Homm - ''Handbuch Anti Aging” (Book, 2008)</li>
+      <li> Philip Lee Miller -'The Life Extension Revolution' (Book, 2006)</li>
+    </ul>
+
+    <div class="sliderdiv">
+      <strong>Do you measure your DHEA status every other year, do you store it in a spreadsheet to watch it over time, and do you know a specialist for bioidentical hormone replacement therapy to discuss counteracting age related decline?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreHd}}" id="scoreHd" name="colorHd">
+      <div class="scoreNum">
+        {{scoreHd}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreHp}} {{colorHp}} small">
+        <span>{{scoreHp}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Pregnenolone</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/8_pregnenolone.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      Pregnenolone is the precursor of all steroids including DHEA, estrogens and testosterone.
+      <br>Low pregnenolone should be ruled out prior to any hormone replacement therapy.
+      <br>Pregnenolone declines which age, it is possible to restore youthful blood levels (180 ng/dl for men; 200 ng/dl for women) with bioidentical pregnenolone - which is a freely available as supplement in most countries, including the EU and US.
+    </p>
+    <br><br>
+    <strong>Cost:</strong>
+    <ul>
+      <li>50 $/€ as part of a comprehensive blood test</li>
+      <li>supplementation of 50 mg daily will cost less than 10 $/€ per month</li>
+    </ul>
+    <p>
+      The benefits/risks of pregnenolone supplementation are still subject of debate. On the other hand the risks of naturally declining hormone levels are clear: metabolic syndrome, muscle wasting and increased risk for heart disease and diabetes.
+    </p>
+
+
+    <div class="sliderdiv">
+      <strong>Do you know your prognenolone baseline, do you store it in a spreadsheet to watch it change over time and do you know a specialist for bioidentical hormone therapy to discuss supplementation?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreHp}}" id="scoreHp" name="colorHp">
+      <div class="scoreNum">
+        {{scoreHp}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreHc}} {{colorHc}} small">
+        <span>{{scoreHc}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Cortisol</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/8_cortisol.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      Cortisol is one of the main stress hormones and increases performance in fight or flight situations.
+      <br>Short periods of stress are highly beneficial to upregulate the metabolism (high intensity strength training, sprints, heat-/ cold-stress, hormesis). Ongoing stress needs to be avoided (lack of sleep, bad diet, auto immune reactions, inflammations, unhealthy gut biome, etc.) Chronically elevated cortisol leads to lowered immune function, insulin sensitivity, metabolic syndrome, premature brain aging and depletes DHEA, which eventually results in adrenal fatigue syndrome.
+    </p>
+    <p>
+      Relevant parameters that should be tested every other year:
+    </p>
+    <ul>
+      <li>cortisol</li>
+      <li>cortisol / DHEA</li>
+    </ul>
+    <p>
+      This can be measured as part of a comprehensive blood count, which will cost less than 20 $/€. ????
+      <br>Cortisol levels change over the course of a day. This can be measured with a saliva test, which will cost about 80 € or 100 $. ????
+      <br>For adults normal cortisol values are 10- 20 µg/dl in the morning, 6 -10 µg/dl in the afternoon and less than 5 µg/dl after bedtime.
+      <br>The cortisol to DHEA ratio should be about 5:1 to 6:1.
+    </p>
+
+
+
+    <div class="sliderdiv">
+      <strong>Do you know your cortisol and your cortisol to DHEA ratio and do you watch it over time?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreHc}}" id="scoreHc" name="colorHc">
+      <div class="scoreNum">
+        {{scoreHc}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreHfh}} {{colorHfh}} small">
+        <span>{{scoreHfh}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Female Hormones</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/8_female_hormones.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      The same hormones are active in both sexes, only in different concentration and interplay.
+      <br>The menopause results in drastically lowered sex hormone levels in women, especially: progesterone, estriol, estradiol and estron. Long term effects of low levels of these hormones are drastic:
+    </p>
+    <ul>
+      <li>aging skin and hair</li>
+      <li>loss of bone density and ostheoporosis</li>
+      <li>increased risk of alzheimer's disease</li>
+      <li>unhealthy cholesterol levels </li>
+      <li>low serotonin / depression</li>
+    </ul>
+    <p>
+      Humans are not really 'meant' to live long after maturity and fertility, but modern humans of course do. Women have to live with suboptimal hormone levels for a long time. Hormone replacement therapy with synthetic hromones (derived from the urine of pregnant horses) increased the risk for breast cancer. Synthetic hormones are used because they can be patented, not because they physiologically make more sense than bioidentical hormones,
+      <br>Nevertheless the knowledge about bioidentical hormones and the understanding of the risks is growing. An individual assessment of hormonal status and supplementation with bioidentical hormones promises great results and should be considered - of course under the guidance of a expert in bioidentical hormone therapy.
+    </p>
+    <br>
+    <br>
+    <strong>Relevant KPI:</strong>
+    <ul>
+      <li>progesterone</li>
+      <li>estriol</li>
+      <li>estradiol</li>
+      <li>estron</li>
+      <li>total testosterone</li>
+      <li>free testosterone</li>
+      <li>SHBG</li>
+    </ul>
+    <br>
+    <strong>More info:</strong>
+    <ul>
+      <li>lifeextension.com - 'female hormone restauration'</li>
+      <li>Suzanne Somers - 'Bombshell: Explosive Medical Secrets That Will Redefine Aging' (Book, 2012)</li>
+    </ul>
+    <div class="sliderdiv">
+      <strong>For women only: Do you know the status of your progesterone, estriol, estradiol and estron? Do you measure how they change over time and have you discussed them with a specialist in hormone therapy with bioidentical hormones?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreHfh}}" id="scoreHfh" name="colorHfh">
+      <div class="scoreNum">
+        {{scoreHfh}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="statusSmall">
+        <div class="c100 p{{scoreHmh}} {{colorHmh}} small">
+          <span>{{scoreHmh}}%</span>
+          <div class="slice">
+            <div class="bar"></div>
+            <div class="fill"></div>
+          </div>
+        </div>
+    </div>
+    <h3 class="accordion-toggle">Male Hormones</h3>
+    <div class="accordion-content">
+      <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+        <source src="http://www.dotcomet.de/longevity-basics/audio/8_male_hormones.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <p>
+        Androgens (male sex hormones) control the development of male characteristics. they are found in different quantities in both, men and women and are responsible for building and maintaining muscle, fat distribution and overall energy, drive, mood and the ability to recover.
+        <br>They gradually decline with age, starting in the early 20s at an increasing rate in the 30s to the point where it becomes problematic. On average after age 30 testosterone drops 1% per year.
+      </p>
+      <p>
+        Low levels in older individuals are considered 'normal', nevertheless they are far from optimal. Low testosterone is directly associated with many symptoms of aging:
+      </p>
+      <ul>
+        <li>low energy</li>
+        <li>diminshed sex drive</li>
+        <li>loss of lean muscle mass</li>
+        <li>increased abdominal fat</li>
+        <li>decreased bone density </li>
+        <li>decreased cognitive function </li>
+        <li>high cholesterol with increased risk for metabolic syndrome / cardiovascular disease</li>
+      </ul>
+      <br>
+      <p>
+        Optimal levels of testosterone:
+      </p>
+      <ul>
+        <li>&gt; 750 ng/dl (26 nmol/l); there is good evidence that 1000ng/dl is better</li>
+        <li>free testosterone: above 14 ng/dl (0.5 nmol/l)</li>
+      </ul>
+      <p>
+        Prostate cancer progresses faster in the presence of higher levels of androgens - solid cancer monitoring and diet high in antioxidants is mandatory. High androgens very likely do not cause prostate cancer, on the contrary it seems to be linked to low hormones.
+      </p>
+      <p>
+        There many ways to increase testosterone, the influence on mood, lean body mass and energy is usually pretty high - which applies to men and women:
+      </p>
+      <ul>
+        <li>deficiencies should be ruled out (all vitamins and quite a few minerals: magnesium, calcium, zinc, boron, manganese and selenium)</li>
+        <li>natural ways to boost testosterone: heavy lifting, high intensity sprint training, sauna, cold baths and sleep</li>
+        <li>DHEA and pregnenolone levels should be in the upper range – they are both important precursors</li>
+        <li>homone replacement therapy with bioidentical hormones - after an individual assessment of hormonal status and prostate health check to rule out cancer</li>
+      </ul>
+      <p>
+        It is easily possible (and probably safe) to push blood levels of both free and total testosterone in the range of a 30 year old.
+        <br>This should be done with the help of an expert in bioidentical hormone therapy.
+      </p>
+      <p>
+        Possible disadvantages:
+      </p>
+      <ul>
+        <li>negative feedback</li>
+        <li>some cancers may develop faster in the presence of androgens</li>
+      </ul>
+      <p>
+        <strong>Relevant parameters:</strong>
+      </p>
+      <ul>
+        <li>total testosterone</li>
+        <li>free testosterone</li>
+        <li>SHBG</li>
+        <li>LH</li>
+        <li>FSH</li>
+        <li>progesterone</li>
+        <li>total estrogen</li>
+        <li>estrone (E1)</li>
+        <li>estradiol (E2)</li>
+      </ul>
+      <br>
+      <p>
+          <strong>Ratios:</strong>
+      </p>
+      <ul>
+        <li>E2 / total estrogen</li>
+        <li>free testosterone / total testosterone</li>
+        <li>testosterone / estrogen</li>
+        <li>E2 / free testosterone</li>
+        <li>progesterone / estrogen</li>
+      </ul>
+      <br>
+      <strong>Cost</strong>
+      <ul>
+        <li>Europe: ~200 &euro; USA: more expensive</li>
+      </ul>
+      <br>
+      <strong>More info:</strong>
+      <ul>
+        <li>lifeextension.com - 'male hormone restauration'</li>
+        <li>Rüdiger Schmidt Homm, Sabine Homm - ''Handbuch Anti Aging” (Book, 2008)</li>
+        <li>Jeffrey Dach, M.D. - 'Bioidentical Hormones 101' - (Book, 2011)</li>
+      </ul>
+
+
+      <div class="sliderdiv">
+        <strong>Do you know your hormonal status, do you watch it change over time, and do you make use of the different means to increase your androgens?</strong>
+        <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreHmh}}" id="scoreHmh" name="colorHmh">
+        <div class="scoreNum">
+          {{scoreHmh}} / 100
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="statusSmall">
+          <div class="c100 p{{scoreHgh}} {{colorHgh}} small">
+            <span>{{scoreHgh}}%</span>
+            <div class="slice">
+              <div class="bar"></div>
+              <div class="fill"></div>
+            </div>
+          </div>
+      </div>
+      <h3 class="accordion-toggle">Growth Hormone</h3>
+      <div class="accordion-content">
+        <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+          <source src="http://www.dotcomet.de/longevity-basics/audio/8_hgh.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <p>
+          Aging will be very different, as soon as we are able to keep growth hormones in a range where the metabolism functions optimally. There is a huge potential in supplementation with human growth hormone (HGH), which is responsible for cell growth / regeneration and influences other growth signals. At this point of time it is still expensive and the risks are probably not clear enough (yet).
+        </p>
+        <p>
+          Potential benefits are: reversal of age related muscle wasting and neurological decline. It is fair to expect groundbreaking discoveries in the near future, which will drastically expand healthspan.
+        </p>
+        <p>
+          HGH levels fluctuate too much to be meaningful when only measured once, but they are linked to IGF-1 (insulin like growth factor) is produced in response to HGH stimulation and shows more stable values, which makes it more meaningful to measure (as long as continuous measurement is not possible).
+          <br>Complicated: high IGF-1 Is linked to higher incidence of some cancers, so boosting IGF-1 and HGH at this point of time is not advisable. This will of course change with increased means of cancer therapy and early detection.
+        </p>
+        <p>
+          A test can be done as part of a comprehensive blood work and will cost ~20 $/€
+        </p>
+
+        <div class="sliderdiv">
+          <strong>Do you know your IGF-1 status and do you watch it over time? </strong>
+          <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreHgh}}" id="scoreHgh" name="colorHgh">
+          <div class="scoreNum">
+            {{scoreHgh}} / 100
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+</div>
+
+
+</template>

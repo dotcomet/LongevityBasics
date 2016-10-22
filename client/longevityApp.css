@@ -1,0 +1,361 @@
+
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'open sans', sans-serif;
+  min-width: 36em;
+}
+
+.maindiv{
+  margin: 0 2em 2em 2em;
+}
+
+
+.navbar-nav > li {
+  background-color: #aaa;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-collapse {
+    background-color: #aaa;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #ccc;
+}
+
+.nav-item{
+  clear: both;
+}
+
+
+.narrative, .nav-item > a {
+  font-size: 1.5em;
+  border-bottom: 1px solid #ccc;
+  padding:0;
+  line-height: normal;
+  font-family: 'open sans', sans-serif;
+  color:#fff;
+  clear: both;
+}
+
+.narrative {
+  text-align: center;
+  font-size: 2em;
+  color:#ccc;
+  border: none;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+
+h1, h2, h3  {
+  color:#707070;
+  font-family: 'Caecilia Bold Italic','roboto slab', serif;}
+
+h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 3.4em;
+  margin-top: 1em;
+}
+
+h2 {
+  margin-top: 2em;
+}
+
+p, li {
+  font-family: 'open sans', sans-serif;
+  color:#555;
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+.secondli {
+  font-size: 1.0em;
+}
+.firstsecondli {
+  margin-top:-0.8em;
+}
+
+strong {
+  font-family: 'open sans', sans-serif;
+  color:#555;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+ul {
+  margin: 1em 0 1em 0;
+}
+
+
+.mainpage {
+  margin-top: 2em;
+}
+
+
+
+img {
+  width:100%
+}
+
+.scoreNum{
+  font-weight: bold;
+  color: #aaa;
+}
+
+
+.textlink{
+  text-decoration: underline;
+  color: #555;
+  font-size: 1.2em;
+}
+
+
+
+/* ##################################### SLIDER ############################# */
+
+input[type="range"] {
+    -webkit-appearance: none;
+      width: 80%;
+    margin: 10% 10% 4% 10%;
+}
+
+
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 80%;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 2px solid #bbb;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    background: #fff;
+    margin-top: -1.4em;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ddd;
+}
+
+input[type=range]::-moz-range-track {
+    width: 80%;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-moz-range-thumb {
+  border: 2px solid #bbb;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  background: #fff;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+input[type=range]::-ms-track {
+    width: 80%;
+    height: 5px;
+
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+    border: 1px solid #bbb;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    background: #fff;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #888;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #ccc;
+}
+
+/* ##################################### SLIDER--END ############################# */
+
+
+.audioplayer {
+  width:100%;
+  min-height: 100px;
+  /*height:10px;*/
+  display:block;
+  margin: 0 0 5em 0;
+}
+
+.accorddiv {
+  margin: 1em 0 4em 0;
+}
+
+
+.audiodiv header{
+  font-size: 0.8em;
+  color: #aaa;
+  font-weight: 700;
+  padding-bottom: 0.2em;
+}
+
+.sliderdiv {
+  background-color: #f8f8f8;
+  border: 1px solid #e7e7e7;
+  padding-top: 1.6em;
+  margin: 3em 0 2em 0;
+  padding: 1em;
+}
+
+.subscore{
+  width: 33%;
+  min-width: 8em;
+  margin: 0 0.3% 0.3% 0;
+  background-color: #ddd;
+  float: left;
+}
+
+.subscore > h3{
+  color: #707070;
+  font-size: 1em;
+  padding: 0.5em 0 0;
+  margin: 0;
+  text-align: center;
+}
+
+.scoreMain{
+  background-color: #ddd;
+  text-align: center;
+  width:100%;
+  padding: 2em;
+  margin-bottom: 1em;
+  min-width: 27em;
+}
+
+.scoreInnerBig{
+  width: 17em;
+  height: 17em;
+  margin: 0 auto;
+}
+
+.scoreInnerSmall{
+  width: 8.5em;
+  height: 8.5em;
+  margin: 1em auto;
+}
+
+.statusSmall{
+  width: 5.8em;
+  height: 5.8em;
+  float: right;
+  margin: 0.3em;
+}
+
+.statusBig{
+  width: 100%;
+  background-image: url("circle3.png");
+  background-size: contain;
+  margin: 0;
+}
+
+
+
+/*accordion*/
+  .accordion-toggle {
+    cursor: pointer;
+    background-color: #ddd;
+    color: #707070;
+    padding: 1em;
+    margin: 0.1em 0 0 0;
+    height: 3.8em;
+    text-decoration: underline;
+  }
+  .accordion-content {
+    padding: 1em;
+    display: none;
+    border: 1px solid #ddd;
+  }
+  .accordion-content.default {
+    display: block;
+    padding: 1em;
+    margin: -0.3em 0;
+  }
+
+  .accordion-content .audiodiv{
+    margin-bottom: 1.4em;
+  }
+
+
+/*navbar always collapsed */
+@media (max-width: 6200px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}

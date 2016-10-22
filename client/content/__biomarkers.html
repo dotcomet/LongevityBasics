@@ -1,0 +1,507 @@
+
+<template name="biomarkers">
+  <h1>Blood Markers</h1>
+
+  <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+    <source src="http://www.dotcomet.de/longevity-basics/audio/7_blood_markers_start.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <p>
+    Blood markers show relevant information about health status and should be tested once every year. They require a blood draw and therefore the help of a clinician in most countries. In the US innovative services like directLabs and healthOneLabs make self testing possible.
+  </p>
+  <p>
+    Markers which are out of balance should be retested to rule out false positives. All values need to be stored in in a spreadsheet, to assess baseline and monitor changes over the years.
+  </p>
+  <p>
+    Most of the values below can be included in one comprehensive blood work – which is listed in the last chapter. The other chapters give a quick overview of  the different markers and their significance, and introduce a few other additional tests including cost.
+  </p>
+  <p>
+    Serious diseases are mostly the result of a development, which can be detected a long time before damage occurs. Irregularities can be addressed with changes in nutrition, lifestyle and supplementation.
+  </p>
+  <br><br>
+  <strong>More info:</strong>
+  <ul>
+    <li>directlabs</li>
+    <li>healthOneLabs</li>
+    <li>labtestsonline</li>
+    <li>forever-healthy.org - 'functional testing'</li>
+  </ul>
+
+
+<h2>Your Blood Markers Score</h2>
+<div class="scoreMain">
+  <div class="scoreInnerBig">
+    <div class="c100 p{{scoreBiomarkers}} {{colorBiomarkers}} big">
+      <span>{{scoreBiomarkers}}%</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="accordion">
+
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreBfab}} {{colorBfab}} small">
+        <span>{{scoreBfab}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Fatty Acid Balance</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/7_fatty_acid_balance.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      A fatty acid balance test shows the nutritional intake and absorption of the various fatty acids. A high omega 6 to omega 3 ratio is associated with cardiovascular disease, cancer, and inflammatory and autoimmune diseases - the lower the better.
+Trans fats are linked to high cholesterol, insulin sensitivity and diabetes - the lower the better.
+    </p>
+    <p>
+      Cost: ~100 $/€
+    </p>
+    <p>
+      Markers:
+    </p>
+    <ul>
+      <li>omega-6 / omega-3</li>
+      <li>trans fats</li>
+    </ul>
+
+    <div class="sliderdiv">
+      <strong>Do you know your omega-6 to omega-3 ratio and your trans fat levels, do you store the values in a spreadsheet to watch them change over time, and do you keep both low?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreBfab}}" id="scoreBfab" name="colorBfab">
+      <div class="scoreNum">
+        {{scoreBfab}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreBm}} {{colorBm}} small">
+        <span>{{scoreBm}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Micronutrients</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/7_micronutrients.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      Micronutrient testing checks the level of most relevant vitamins, minerals, amino acids and antioxidants in the white blood cells.
+      <br>Spectracell in the US offers a boradband test, which measures the levels of 33 levels in the white blood cells and is available in the US, Canada, Venezuela and the UK.
+    </p>
+    <p>
+      Cost: ~400 $
+    </p>
+    <p>
+      Most common deficiencies are: Vitamin A, D, K2, B12, E, magnesium, iodine, calcium, selenium.
+      <br>Other important values: Antioxidants (alpha lipoic acid, coenzyme Q10) and amino acids for protein metabolism.
+    </p>
+    <br><br>
+    <strong>More info: </strong>
+    <ul>
+      <li>spectracell.com</li>
+    </ul>
+
+
+    <div class="sliderdiv">
+      <strong>Do you know your nutritional status, have you stored it in a spreadsheet and do you watch it over time? Do you use this information to optimize your food and supplementation?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreBm}}" id="scoreBm" name="colorBm">
+      <div class="scoreNum">
+        {{scoreBm}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreBbl}} {{colorBbl}} small">
+        <span>{{scoreBbl}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Blood Lipids</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/7_blood_lipids.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      A lipid profile test measures cholesterol and triglycerides in the blood.
+High cholesterol levels don't cause direct symptoms but increase the risk for cardiovascular disease.
+Reasons for elevated cholesterol: diet (insulin resistance), stress, metabolic problems, genetic predisposition.
+    </p>
+    <p>
+      New research suggests: LDL (bad cholesterol) particle count alone is not a meaningful risk factor - only the smallest LDL particles show a direct link to heart disease and arteriosclerosis.
+    </p>
+    <ul>
+      <li>Pattern A: small LDL particles are low and large LDL and HDL is high</li>
+      <li>Pattern B: small LDL particles are high, HDL is low, and triglycerides are high</li>
+      <li>Pattern B is strongly associated with increased risk of heart disease, pattern A is not</li>
+    </ul>
+    <p>
+      Cost as part of a comprehensive blood panel: less than 200 $/€
+    </p>
+    <p>
+      Relevant parameters:
+    </p>
+    <ul>
+      <li>LDL-P (&lt; 1000 nmol/l)</li>
+      <li>total cholesterol (&lt; 200 mg/dl)</li>
+      <li>HDL (40-49 mg/dl for men, 50-59 mg/dl for women)</li>
+      <li>LDL (&lt; 100 mg/dl)</li>
+      <li>VLDL (2 - 30 mg/l)</li>
+      <li>Triglycerides (&lt; 150 mg/dl)</li>
+      <li>Lp(a) (&lt; 30 mg/dl) </li>
+    </ul>
+    <br>
+    <strong>More info:</strong>
+    <ul>
+      <li>Chris Kresser - 'The Diet Heart Myth'</li>
+      <li>forever-healthy.org - 'Blood Lipids'</li>
+    </ul>
+    <div class="sliderdiv">
+      <strong>Do you know your blood lipids, do you watch them over time, and do you influence them through diet, lifestyle and supplementation?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreBbl}}" id="scoreBbl" name="colorBbl">
+      <div class="scoreNum">
+        {{scoreBbl}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+
+      <div class="statusSmall">
+          <div class="c100 p{{scoreBi}} {{colorBi}} small">
+            <span>{{scoreBi}}%</span>
+            <div class="slice">
+              <div class="bar"></div>
+              <div class="fill"></div>
+            </div>
+          </div>
+      </div>
+      <h3 class="accordion-toggle">Inflammation</h3>
+      <div class="accordion-content">
+        <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+          <source src="http://www.dotcomet.de/longevity-basics/audio/7_inflammation.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <p>
+          Chronic inflammation is a major driver of aging. if unresolved it leads to metabolic syndrome, diabetes, heart disease, brain damage.
+          <br>Reasons for elevated levels: inflammation in the gut or in the mouth, high carb diet, insulin resistance, autoimmune or allergic reactions, infections, etc.
+          <br>Anti-inflammatory foods/supplements: omega-3, vitamin B6, turmeric, ginger, green tea, etc.
+        </p>
+        <p>
+          Relevant marker:
+        </p>
+        <ul>
+          <li>C-reactive protein (hsCRP)
+            <ul>
+              <li class="secondli firstsecondli">ok: &lt; 1 mg/l </li>
+              <li class="secondli">optimal: &lt; 0.5 mg/l (the lower the better)</li>
+              <li class="secondli">high risk: &gt; 3 mg/l</li>
+            </ul>
+          </li>
+        </ul>
+        <br>
+        <strong>More info:</strong>
+        <ul>
+          <li>Chris Kresser - 'how inflammation makes you fat and diabetic'</li>
+        </ul>
+
+        <div class="sliderdiv">
+          <strong>Do you measure your hs-CRP every year? Do you monitor it over time and do keep it well below 1 mg/l, with optimal nutrition, lifestyle and supplementation?</strong>
+          <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreBi}}" id="scoreBi" name="colorBi">
+          <div class="scoreNum">
+            {{scoreBi}} / 100
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+        <div class="statusSmall">
+            <div class="c100 p{{scoreBcar}} {{colorBcar}} small">
+              <span>{{scoreBcar}}%</span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
+            </div>
+        </div>
+        <h3 class="accordion-toggle">Chronic Allergic Reactions</h3>
+        <div class="accordion-content">
+          <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+            <source src="http://www.dotcomet.de/longevity-basics/audio/7_chronic_allergic_reactions.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+
+          <p>
+
+Immunoglobulin E (IgE) is the most abundant antibody and holds information about the state of the immune system. IgE can be chronically elevated, when the immune system is under stress (auto immune issue , chronic allergic reactions, parasitic infection, etc.). In this case retesting with allergen specific IgE and further investigation becomes necessary.
+          </p>
+          <p>
+            Cost: below 10 $/€ as part of a full blood panel ????
+          </p>
+          <p>
+            Relevant marker:
+          </p>
+          <ul>
+            <li>&lt; 25 IU/ml: ok</li>
+            <li>25 - 100 IU/ml unclear, further checkups necessary</li>
+            <li>&gt;  100 IU/ml: allergic reaction is likely</li>
+          </ul>
+
+          <div class="sliderdiv">
+            <strong>Do you know your IgE level, do you watch it over time and do you keep it well below 100 IU/ml?</strong>
+            <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreBcar}}" id="scoreBcar" name="colorBcar">
+            <div class="scoreNum">
+              {{scoreBcar}} / 100
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+            <div class="statusSmall">
+                <div class="c100 p{{scoreBtm}} {{colorBtm}} small">
+                  <span>{{scoreBtm}}%</span>
+                  <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
+                  </div>
+                </div>
+            </div>
+            <h3 class="accordion-toggle">Tumor Markers</h3>
+            <div class="accordion-content">
+              <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+                <source src="http://www.dotcomet.de/longevity-basics/audio/7_tumor_markers.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+
+              <p>
+                Tumor markers are elevated if some form of cancer is present. Unfortunately false positives and false negatives are quite common, which limits the possibilities for early detection.
+              </p>
+              <p>
+                Two tumor markers, are meaningful to test:
+              </p>
+              <ul>
+                <li>PSA (for men) - early indicator for prostate cancer. Blood levels should be below 1 ng/ml. False positives are common.</li>
+                <li>CEA (for women and men) -  short for carcino embryonic antigen, associated with colorectal cancer, sometimes elevated by breast, pancreas, lung and gastric cancer. It should be lower than 3 ng/ml.</li>
+              </ul>
+              <p>
+                Cost: less than 20 $/€ each as part of a full blood test.
+              </p>
+
+              <div class="sliderdiv">
+                <strong>Do you measure your CEA every year, and for men: do you know your PSA?</strong>
+                <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreBtm}}" id="scoreBtm" name="colorBtm">
+                <div class="scoreNum">
+                  {{scoreBtm}} / 100
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+              <div class="statusSmall">
+                  <div class="c100 p{{scoreBme}} {{colorBme}} small">
+                    <span>{{scoreBme}}%</span>
+                    <div class="slice">
+                      <div class="bar"></div>
+                      <div class="fill"></div>
+                    </div>
+                  </div>
+              </div>
+              <h3 class="accordion-toggle">Methylation</h3>
+              <div class="accordion-content">
+                <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+                  <source src="http://www.dotcomet.de/longevity-basics/audio/7_methylation.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+
+                <p>
+                  Methylation is a basic process in the body, which occurs millions of times every second (ATP generation, production of antioxidants / signaling molecules, regulation of gene expression).
+                  <br>Problems in the methylation cycle affect the whole body. The first symptoms most likely occur in the brain, (neurotransmitters) and lead to mood disorders, cognitive and behavioral issues.
+                  <br>Methylation is affected by genetics, exposure to mercury, unhealthy gut biome, sleep deprivation, stress, sedentary lifestyle, alcohol, ...
+                  <br>Imbalances can be corrected with supplementation.
+                </p>
+                <p>
+                  <strong>Genetic testing:</strong>
+                  <br>upload of 23andme-file into ...
+                </p>
+                <p>
+                  geneticgenie.org:
+                </p>
+                <ul>
+                  <li>list of SNIPs (single nucleotide polymorphism)</li>
+                  <li>cost: free</li>
+                </ul>
+                <p>
+                  mthfrsupport.com:
+                </p>
+                <ul>
+                  <li>list of all snips grouped by the pathway, linked to a snp-pedia page</li>
+                  <li>cost: 15-30 $, depending on the number of snps</li>
+                </ul>
+                <br>
+                <p>
+                  <strong>Functional testing.</strong>
+                  <br>Basic: homocysteine, folic acid, vitamin B12 (~50$/€)
+                  <br>Additinal: glutathione, folate, methylmalonic acid, vitamin B6
+                  <br>...based on the outcome of the genetic test, as epigenetics, lifestyle and the actual state of the biochemistry play a big role.
+                  <br>An alternative are the existing methylation panels:
+                </p>
+                <ul>
+                  <li>'doctors data' - ~250 $</li>
+                  <li>'health diagnostics reseach institute' ~ 350 $</li>
+                </ul>
+
+
+
+                <div class="sliderdiv">
+                  <strong>Do you know your methylation related SNIPs? Have you performed a functional test according to your genetic predisposition and do you regulate imbalances with nutrition, changes in lifestyle and  supplementation?</strong>
+                  <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreBme}}" id="scoreBme" name="colorBme">
+                  <div class="scoreNum">
+                    {{scoreBme}} / 100
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+                  <div class="statusSmall">
+                      <div class="c100 p{{scoreBg}} {{colorBg}} small">
+                        <span>{{scoreBg}}%</span>
+                        <div class="slice">
+                          <div class="bar"></div>
+                          <div class="fill"></div>
+                        </div>
+                      </div>
+                  </div>
+                  <h3 class="accordion-toggle">Glycation</h3>
+                  <div class="accordion-content">
+                    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+                      <source src="http://www.dotcomet.de/longevity-basics/audio/7_glycation.mp3" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                    </audio>
+
+                    <p>
+                      Glycation is the formation of advanced glycation end products (AGEs): crosslinks which randomly form between blood glucose or fructose and other molecules in the body, such as lipids and proteins, i.e. in the walls of blood vessels. With time this leads to hypertension and the formation of blood clots, which cause stroke or heart attack.
+                      <br>AGEs are stable and accumulate - their number serves as one of the markers of aging. This is one of the reasons, why a diet with a low glycemic load and low in fructose is beneficial.
+                    </p>
+                    <p>
+                      Browning of food through frying or baking creates dietary AGEs which results in higher oxidative stress and inflammation. Low temperature cooking methods are preferable.
+                    </p>
+                    <p>
+                      Some supplements (vitamin B1, B6, resveratrol, alpha lipoic acid, ...) have shown to reduce AGE formation.
+                    </p>
+                    <p>
+                      Glycation can be approximated through glycated hemoglobin (HbA1c).
+                      <br>HbA1ac should be below 5% and an upward trend is a bad sign.
+                    </p>
+                    <p>
+                      Cost: Less than 10 $/€ as part of a full blood test.
+                    </p>
+                    <br><br>
+                    <strong>More infomation:</strong>
+                    <ul>
+                      <li>SENS foundation - 'breaking extracellular crosslinks'</li>
+                      <li>US national library of medicine - 'Advanced Glycation End Products in Foods and a Practical Guide to Their Reduction in the Diet'</li>
+                    </ul>
+
+                    <div class="sliderdiv">
+                      <strong>Do you know your glycation status, do you monitor it over time, and do avoid high levels of glucose and fructose in the blood?</strong>
+                      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreBg}}" id="scoreBg" name="colorBg">
+                      <div class="scoreNum">
+                        {{scoreBg}} / 100
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+              <div class="statusSmall">
+                  <div class="c100 p{{scoreBab}} {{colorBab}} small">
+                    <span>{{scoreBab}}%</span>
+                    <div class="slice">
+                      <div class="bar"></div>
+                      <div class="fill"></div>
+                    </div>
+                  </div>
+              </div>
+              <h3 class="accordion-toggle">Full Blood Test</h3>
+              <div class="accordion-content">
+                <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+                  <source src="http://www.dotcomet.de/longevity-basics/audio/7_full_blood_test.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+
+                <p>
+                  Most of the blood markers can be measured with one blood draw, consisting of several vials. Together with nutritional status and hormone levels the full blood test provides a good overview of health status and risk factors. The accuracy and spectrum of predictions will develop further, probably exponentially fast. It is reasonable to expect amazing progress, which will have a huge impact on functional lifespan.
+                </p>
+                <p>
+                  Today many meaningful biomarkers can be tested and sophisticated monitoring technologies exist. The first step is to create data and actually start measuring. Today this does not exist as a service - it is necessary to learn about the new possibilities and make it your own responsibility to implement them in your life.
+                </p>
+                <p>
+                  The full panel is below. It will cost ????
+                </p>
+                <div class="sliderdiv">
+                  <strong>Do you know your complete blood panel, have you stored it somewhere in a spreadsheet, to watch it over time?</strong>
+                  <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreBab}}" id="scoreBab" name="colorBab">
+                  <div class="scoreNum">
+                    {{scoreBab}} / 100
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+</div>
+
+
+</template>

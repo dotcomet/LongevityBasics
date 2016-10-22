@@ -1,0 +1,41 @@
+<template name="navigation">
+
+
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid" data-toggle="collapse" data-target="#navbar">
+      <div class="navbar-header" >
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li class="nav-item"><a href="{{pathFor 'home'}}" data-toggle="collapse" data-target="#navbar">Home</a></li>
+          <li class="nav-item"><a href="{{pathFor 'nutrition'}}" data-toggle="collapse" data-target="#navbar">Nutrition</a></li>
+          <li class="nav-item"><a href="{{pathFor 'workout'}}" data-toggle="collapse" data-target="#navbar">Workout</a></li>
+          <li class="nav-item"><a href="{{pathFor 'mentalBalance'}}" data-toggle="collapse" data-target="#navbar">Mental Balance</a></li>
+          <li class="nav-item"><a href="{{pathFor 'detox'}}" data-toggle="collapse" data-target="#navbar">Detox</a></li>
+          <li class="nav-item"><a href="{{pathFor 'supplements'}}" data-toggle="collapse" data-target="#navbar">Supplements</a></li>
+          <li class="nav-item"><a href="{{pathFor 'quantifiedSelf'}}" data-toggle="collapse" data-target="#navbar">Quantified Self</a></li>
+          <li class="nav-item"><a href="{{pathFor 'biomarkers'}}" data-toggle="collapse" data-target="#navbar">Blood Markers</a></li>
+          <li class="nav-item"><a href="{{pathFor 'hormones'}}" data-toggle="collapse" data-target="#navbar">Hormones</a></li>
+          <li class="nav-item"><a href="{{pathFor 'screenings'}}" data-toggle="collapse" data-target="#navbar">Screenings</a></li>
+          <li class="nav-item narrative">++++++</li>
+
+          <li class="nav-item"><a href="{{pathFor 'fivehundred'}}">Yes, 500 years!</a></li>
+          <li class="nav-item"><a href="{{pathFor 'future'}}">The Future</a></li>
+          <li class="nav-item"><a href="{{pathFor 'disclaimer'}}">Method & Disclaimer</a></li>
+          <li class="nav-item"><a href="{{pathFor 'contact'}}">Contact & Impressum</a></li>
+
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+</template>

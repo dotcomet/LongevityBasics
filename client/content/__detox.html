@@ -1,0 +1,349 @@
+
+<template name="detox">
+  <h1>Detox</h1>
+
+
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+    <source src="http://www.dotcomet.de/longevity-basics/audio/4_detox_start.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+<p>
+  A detox strategy in the sense of 'cleaning the body from the effects of bad nutrition / lifestyle' is physiologically not comprehensible.
+  From a biological point of view the only possible 'detox strategy' is:
+</p>
+<ul>
+  <li>avoid exposure to toxins (food, household, cosmetics, dental fillings, alcohol & smoking)</li>
+  <li>make sure that the detox-system (liver, kidneys ...) works well</li>
+  <li>sufficient hydration</li>
+  <li>radiation in our modern world is potentially an issue and poses a few questions, which deserve a closer look at what's scientifically know.</li>
+</ul>
+
+<h2>Your Detox Score</h2>
+<div class="scoreMain">
+  <div class="scoreInnerBig">
+    <div class="c100 p{{scoreDetox}} {{colorDetox}} big">
+      <span>{{scoreDetox}}%</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="accordion">
+
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreDf}} {{colorDf}} small">
+        <span>{{scoreDf}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Food</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/4_food.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      The most obvious and important 'detox strategy': stop eating toxins
+    </p>
+
+    <ul>
+      <li>high omega-6 vegetable oils (safflower, grapeseed, poppyseed, soy, corn, sunflower, etc.)</li>
+      <li>high fructose corn syrup</li>
+      <li>trans fats</li>
+      <li>artificial sweetners (aspartame, neotame)</li>
+      <li>soy products, that are not traditionally fermented</li>
+      <li>mercury (seafood)</li>
+      <li>refined carbs</li>
+      <li>other food additives (glutamate, antioxidative preservatives, etc.)</li>
+      <li>carcinogens and mutagens from high temperature cooking</li>
+    </ul>
+    <br>
+    <strong>Sources:</strong>
+    <ul>
+      <li>Chris Kresser - '9 Steps To Perfect Health - #1: Don't Eat Toxins'</li>
+      <li>Dr. Hyman - 'Is There Toxic Waste In Your Body?'</li>
+    </ul>
+
+    <div class="sliderdiv">
+      <strong>Do you know about the varios toxins in a normal western diet and do you manage to avoid them?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreDf}}" id="scoreDf" name="colorDf">
+      <div class="scoreNum">
+        {{scoreDf}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreDh}} {{colorDh}} small">
+        <span>{{scoreDh}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Household</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/4_household.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      Many household products can be surprisingly toxic
+    </p>
+
+    <ul>
+      <li>cleaning products (phtalates, triclosan, 2&nbsp;-&nbsp;butoxyethanol, ammonia, etc)
+        <br>Natural alternatives: baking soda, white vinegar, natural (organic) cleaners</li>
+      <li>cookware (teflon, aluminum)</li>
+      <li>plastic bottles and containers</li>
+      <li>floor oil & paint</li>
+      <li>dry cleaning</li>
+    </ul>
+
+
+    <div class="sliderdiv">
+      <strong>Have you checked the chemicals around you, your cookware and cutlery, and do you keep your food in safe non-­toxic containers?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreDh}}" id="scoreDh" name="colorDh">
+      <div class="scoreNum">
+        {{scoreDh}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreDc}} {{colorDc}} small">
+        <span>{{scoreDc}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Cosmetics</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/4_cosmetics.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      Dermal absorption is so efficient, that for many chemicals it is irrelevant whether they are consumed orally or rubbed on the skin. Many substances, which are used in mainstream cosmetics are questionable (phthalates, parabens, formaldehyde, mineral oil, ...)
+      <br>Natural alternatives:
+    </p>
+
+    <ul>
+      <li>coconut oil</li>
+      <li>argan oil</li>
+      <li>shea butter</li>
+    </ul>
+
+    <div class="sliderdiv">
+      <strong>Are you aware that chemicals can be absorbed into the bloodstream through the skin and do you avoid applying mineral oil or other questionable chemicals on your skin ? Do you use natural substances instead?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreDc}}" id="scoreDc" name="colorDc">
+      <div class="scoreNum">
+        {{scoreDc}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreDaf}} {{colorDaf}} small">
+        <span>{{scoreDaf}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Amalgam Fillings</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/4_amalgam_fillings.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      Amalgam fillings constantly release small quantities of mercury, in the form of vapor. Mercury is a known toxin, which binds to enzymes and disrupts their function. Amalgam fillings are not a smart choice and should be removed if possible.
+    </p>
+    <br>
+    <strong>More info:</strong>
+    <ul>
+      <li>Mercola - 'Still Carrying Around Mercury Next to Your Brain?'</li>
+    </ul>
+
+    <div class="sliderdiv">
+      <strong>Are you free from amalgam fillings?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreDaf}}" id="scoreDaf" name="colorDaf">
+      <div class="scoreNum">
+        {{scoreDaf}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreDr}} {{colorDr}} small">
+        <span>{{scoreDr}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Radiation</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/4_radiation.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      Ionizing radiation (particles, X-rays, gamma rays) carries enough energy to remove electrons from atoms (ionize them). This destroys molecules and can lead to cell death or mutations, overexposure is therefore dangerous. Ionizing radiation is measured in microsieverts (microSv):
+    </p>
+
+    <ul>
+      <li>air travel: 5 microSv / h -&gt; 6h flight: 30 microSV
+        <br>Flight personnel have significantly higher risk for cancer</li>
+        <li>chest X-ray: 100 microSv</li>
+        <li>natural exposure per year: 2400 microSV
+          <br>(~500h airtravel)</li>
+        <li>full body computer tomography: 10.000 microSV</li>
+        <li>smoking one pack of cigarettes per day for one year: 80.000 microsieverts</li>
+    </ul>
+    <p>
+      Radio waves (cell phones, WiFi, TV, ...) are non-ionizing, they carry much less energy and do not destroy cells.
+    </p>
+    <ul>
+      <li>carrying a cellphone in the front pockets shows a negative effect on sperm motility and viability</li>
+      <li>the WHO classifies cell phone radiation as potential carcinogen, but there is no strong scientific evidence for the connection to brain tumors or other cancers</li>
+      <li>an effect on sleep, brain activity, immune function and the blood brain barrier can be shown, but it's not clear that these effects are negative</li>
+    </ul>
+    <p>
+      Non-ionizing radiation should be viewed with suspicion, but there is no clear evidence that it is harmful.
+      There is no downside to using headphones and turning emitting devices off at night.
+    </p>
+
+    <div class="sliderdiv">
+      <strong>Do you limit airtravel, X-ray exposure and do you refrain from carrying your cellphone in your pants?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreDr}}" id="scoreDr" name="colorDr">
+      <div class="scoreNum">
+        {{scoreDr}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreDas}} {{colorDas}} small">
+        <span>{{scoreDas}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Alcohol & Smoking</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/4_alcohol_and_smoking.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      Smoking is the biggest risk factor for cancer and a major risk parameter for heart disease:
+    </p>
+
+    <ul>
+      <li>50% of all who pick up the habit of smoking die from the effects</li>
+      <li>cigarette smoke contains a few thousand different chemicals, many of them highly toxic</li>
+      <li>leading cause of preventable death</li>
+      <li>~6 million people worldwide die from it every year, 5 million smokers and ~600.000 non-smokers, exposed to second hand smoke</li>
+    </ul>
+    <p>
+      Alcohol:
+    </p>
+    <ul>
+      <li>addictive and toxic in higher dose</li>
+      <li>potentially high carb load</li>
+      <li>not a big threat when consumed responsibly (1-2 drinks per day or less; dry wine, clear spirits)</li>
+    </ul>
+
+    <div class="sliderdiv">
+      <strong>are you a non smoker and do you drink rarely and responsibly – definitely less than 1-2 drinks per day?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreDas}}" id="scoreDas" name="colorDas">
+      <div class="scoreNum">
+        {{scoreDas}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreDds}} {{colorDds}} small">
+        <span>{{scoreDds}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Detox Strategies</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/4_detox_strategies.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      The only scientifically proven detox strategy:
+    </p>
+
+    <ul>
+      <li>make sure that the detox organs work well (liver, kidney, intestines, skin respiratory tract)</li>
+      <li>drink enough clean water</li>
+      <li>weak evidence that a herb, schisandra chinensis, enhances liver function</li>
+      <li>keep toxic load low (maintain good gut health)</li>
+    </ul>
+    <p>
+      Other detox strategies (cleanses, flushes) have little or no scientific backing.
+    </p>
+
+    <div class="sliderdiv">
+      <strong>Do you eat clean, with loads of micronutrients, do you drink lots of clean water and do you keep the toxic load low?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreDds}}" id="scoreDds" name="colorDds">
+      <div class="scoreNum">
+        {{scoreDds}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+</template>

@@ -1,0 +1,242 @@
+<template name="mentalBalance">
+  <h1>Mental Balance</h1>
+
+
+  <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+    <source src="http://www.dotcomet.de/longevity-basics/audio/3_mental_balance_start.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+    <p class="mainpage">
+      Emotional and mental balance, cognitive function and mood are directly influenced by lifestyle and nutrition. Impaired metabolic precesses, which affect the brain, neuro transmitters and the rest of the nervous system, have negative effects on mental wellbeeing. Clean eating, mindful routines and meditation provide a framework to achieve optimal mental performance. especiall when done regularly. And of course sleep, active stress management and a sense of purpose and connectedness are important too - not so surprising ... what IS surprising though, is the magnitude of the influence on health: For older people social isolation is more harmful than diabetes.
+    </p>
+
+<h2>Your Mental Balance Score</h2>
+<div class="scoreMain">
+  <div class="scoreInnerBig">
+    <div class="c100 p{{scoreMentalBalance}} {{colorMentalBalance}} big">
+      <span>{{scoreMentalBalance}}%</span>
+      <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="accordion">
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreMBmr}} {{colorMBmr}} small">
+        <span>{{scoreMBmr}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Morning Routines</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/3_morning_routines.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      The secret to the power of a morning routine is ... routine.
+    </p>
+    <ul>
+      <li>make your bed</li>
+      <li>meditate</li>
+      <li>hang</li>
+      <li>drink tea</li>
+      <li>plan the day</li>
+    </ul>
+    <br><br>
+    <strong>Source:</strong>
+    <ul>
+      <li>Tim Ferris
+        <br>5 Morning Rituals That Help Me Win The Day
+      </li>
+    </ul>
+
+    <div class="sliderdiv">
+      <strong>Do you find the time and consistency for a daily morning routine?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreMBmr}}" id="scoreMBmr" name="colorMBmr">
+      <div class="scoreNum">
+        {{scoreMBmr}} / 100
+      </div>
+    </div>
+  </div>
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreMBm}} {{colorMBm}} small">
+        <span>{{scoreMBm}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Meditation</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/3_meditation.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+    Almost everybody who tries to enhance performance, mood and happiness sooner or later will pick up meditating. It's easy to do (*Don't think!*) and has many proven benefits:
+    </p>
+    <ul>
+      <li>lower stress hormones</li>
+      <li>reduced anxiety and depression</li>
+      <li>increased mental performance</li>
+      <li>increased grey matter</li>
+    </ul>
+    <br>
+    <strong>Sources</strong>
+    <ul>
+      <li>Wikipedia - Research on meditation</li>
+      <li>Psychology Today - '20 Scientific Reasons To Start Meditating Today'</li>
+    </ul>
+
+    <div class="sliderdiv">
+      <strong>
+        Have you tried meditation as a tool to tame the monkey mind, do you meditate regularly and are you able to bring your mind into a calm state if you want to?
+      </strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreMBm}}" id="scoreMBm" name="colorMBm">
+      <div class="scoreNum">
+        {{scoreMBm}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreMBst}} {{colorMBst}} small">
+        <span>{{scoreMBst}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Stress</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/3_stress.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      Stress is defined by serum levels of stress hormones (adrenaline, cortisol, norepinephrine ...). It can have social/psychological as well as physiological causes:
+    </p>
+<ul>
+  <li>micronutrient deficiencies, bad diet</li>
+  <li>lack of sleep</li>
+  <li>inflammation</li>
+  <li>insufficient recovery</li>
+  <li>heat stress</li>
+  <li>chronic dehydration</li>
+</ul>
+<p>
+  Chronically elevated cortisol is associated with a number of ilnesses:
+</p>
+<ul>
+  <li>cardiovascular disease</li>
+  <li>weight gain</li>
+  <li>low immune function</li>
+  <li>low bone density</li>
+  <li>impaired cognitive function</li>
+  <li>depression / mood disorders</li>
+</ul>
+<p>
+  Active stress management is non-negotiatable
+</p>
+
+
+    <div class="sliderdiv">
+      <strong>Are you aware that stress is a real danger and are you able to avoid chronic stress?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreMBst}}" id="scoreMBst" name="colorMBst">
+      <div class="scoreNum">
+        {{scoreMBst}} / 100
+      </div>
+    </div>
+  </div>
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreMBsl}} {{colorMBsl}} small">
+        <span>{{scoreMBsl}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Sleep</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/3_sleep.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+
+    <ul>
+      <li>chronic lack of sleep (less than 7-8)hours is associated with high cholesterol and therefore a wide array of diseases, from hypertension to impaired immune- and cognitive function.</li>
+      <li>sleep tracking apps are great to monitor sleep quality (because they record all noise above a certain threshold ) and quantify sleep duration.</li>
+      <li>polyphasic sleep allows to achive more time awake every day</li>
+      <li>practical: the '8 hour in bed' rule (sleep/meditate)</li>
+    </ul>
+
+    <div class="sliderdiv">
+      <strong>Have you checked the quality of your sleep and do you regularly get 7 or 8 hours of rest?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreMBsl}}" id="scoreMBsl" name="colorMBsl">
+      <div class="scoreNum">
+        {{scoreMBsl}} / 100
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="statusSmall">
+      <div class="c100 p{{scoreMBff}} {{colorMBff}} small">
+        <span>{{scoreMBff}}%</span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+      </div>
+  </div>
+  <h3 class="accordion-toggle">Fun & Friends</h3>
+  <div class="accordion-content">
+    <audio controls="controls" id="audio" class="audioplayer" preload="auto" tabindex="0" type="audio/mpeg">
+      <source src="http://www.dotcomet.de/longevity-basics/audio/3_fun_and_friends.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      Having fun and engaging in meaningful social interaction is a main determinant of health and wellbeing. The impact is surprisingly big - especially for older people the number and quality of social connections is directly correlated to health and mortality. Social isolation seems to be more harmful than diabetes.
+    </p>
+
+    <div class="sliderdiv">
+      <strong>Are you happy with your social network and are your social ties strong and meaningful?</strong>
+      <input type="range" class="fhSlider" min ="0" max="100" value ="{{scoreMBff}}" id="scoreMBff" name="colorMBff">
+      <div class="scoreNum">
+        {{scoreMBff}} / 100
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+</template>

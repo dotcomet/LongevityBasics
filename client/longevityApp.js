@@ -10,6 +10,8 @@ Tracker.autorun(function () {
 	});
 });
 
+console.log('hello world');
+
 //############################ SLIDER COLOR
 scoreOrange = 40;
 scoreGreen = 80;

@@ -18,7 +18,7 @@ scoreGreen = 80;
 //################################## 1 - nutrition
 //Session.set('scoreNlcp',  '0');
 Session.set("currentRoomId", "home");
-alert("wooobooo2");
+
 
 
 Session.set('scoreNlcp',  window.localStorage.getItem('scoreNlcp') || 0);

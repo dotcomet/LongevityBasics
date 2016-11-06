@@ -2,6 +2,7 @@
 // the entire section is optional.
 App.info({
   id: 'LongevityBasics',
+  version: "20"
   name: 'Longevity Basics',
   description: 'Shortcut to a state of the art longevity strategy!',
   author: 'Mathias Brandt',

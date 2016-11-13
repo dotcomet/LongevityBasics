@@ -1,7 +1,7 @@
 // This section sets up some basic app metadata,
 // the entire section is optional.
 App.info({
-  id: 'com.longevity-basics.app',
+  id: 'com.longevitybasics.app',
   name: 'Longevity Basics',
   version: "1.0.0",
   description: 'Shortcut to a state of the art longevity strategy!',

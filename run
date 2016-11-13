@@ -1,7 +1,8 @@
 #!/bin/bash -e
 
 
-if ["$1" == "ios-release"]; then
+if [ "$1" == "ios-release" ]; then
+  rm -rf .meteor/local/cordova-build
   rm -rf ../longevity-ios-build
   meteor build ../longevity-ios-build --server http://www.longevity-basics.com:3000
   open ../longevity-ios-build/ios/project/Longevity\ Basics.xcodeproj/

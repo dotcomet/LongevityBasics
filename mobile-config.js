@@ -12,8 +12,6 @@ App.info({
 
 App.accessRule('*');
 
-App.setPreference('AllowInlineMediaPlayback', true);
-
 App.icons({
   //ios
   'iphone_2x': '_icons/ios/icons/iphone_2x.png', //(120x120)
@@ -64,3 +62,4 @@ App.setPreference('BackgroundColor', '0xffffffff');
 App.setPreference('HideKeyboardFormAccessoryBar', true);
 App.setPreference('Orientation', 'default');
 App.setPreference('Orientation', 'all', 'ios');
+App.setPreference('StatusBarStyle', 'default');

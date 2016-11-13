@@ -10,6 +10,9 @@ App.info({
   website: 'http://www.longevity-basics.com'
 });
 
+App.accessRule('*');
+
+App.setPreference('AllowInlineMediaPlayback', true);
 
 App.icons({
   // ANDROID

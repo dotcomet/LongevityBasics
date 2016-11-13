@@ -7,7 +7,7 @@ Meteor.startup(function(){
         StatusBar.styleDefault();
       }, 1000)
     }catch(e){
-      console.error(e),
+      console.error(e);
     }
   }
 })

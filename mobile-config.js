@@ -3,7 +3,7 @@
 App.info({
   id: 'com.longevitybasics.app',
   name: 'Longevity Basics',
-  version: "1.0.0",
+  version: "1.0.2",
   description: 'Shortcut to a state of the art longevity strategy!',
   author: 'Mathias Brandt',
   email: 'hello@longevity-basics.com',
@@ -44,15 +44,15 @@ App.launchScreens({
   'ipad_landscape': '_icons/ios/splash/ipad_landscape.png', //(1024x768)
   'ipad_landscape_2x': '_icons/ios/splash/ipad_landscape_2x.png', //(2048x1536)
   // ANDROID
-  'android_mdpi_portrait': '_splash/portrait_470.png',
-  'android_hdpi_portrait': '_splash/portrait_640.png',
-  'android_xhdpi_portrait': '_splash/portrait_960.png',
-  'android_xxhdpi_portrait': '_splash/portrait_1920.png',
+  'android_mdpi_portrait': '_splash/mdpi_portrait.png',
+  'android_hdpi_portrait': '_splash/hdpi_portrait.png',
+  'android_xhdpi_portrait': '_splash/xhdpi_portrait.png',
+  'android_xxhdpi_portrait': '_splash/xxhdpi_portrait.png',
 
-  'android_mdpi_landscape': '_splash/landscape_470.png',
-  'android_hdpi_landscape': '_splash/landscape_640.png',
-  'android_xhdpi_landscape': '_splash/landscape_960.png',
-  'android_xxhdpi_landscape': '_splash/landscape_1920.png',
+  'android_mdpi_landscape': '_splash/mdpi_landscape.png',
+  'android_hdpi_landscape': '_splash/hdpi_landscape.png',
+  'android_xhdpi_landscape': '_splash/xhdpi_landscape.png',
+  'android_xxhdpi_landscape': '_splash/xxhdpi_landscape.png',
 
 });
 

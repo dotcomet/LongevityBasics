@@ -697,7 +697,18 @@ Template.body.events({
     $(this).next().slideToggle('fast');
 
     //Hide the other panels
-    $(".accordion-content").not($(this).next()).slideUp('fast');
+    //$(".accordion-content").not($(this).next()).slideUp('fast');
+  }
+
+});
+
+Template.body.events({
+  "click .statusSmall": function(event, template){
+    //Expand or collapse this panel
+    $(this).next().next().slideToggle('fast');
+
+    //Hide the other panels
+    //$(".accordion-content").not($(this).next()).slideUp('fast');
   }
 
 });

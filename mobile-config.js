@@ -3,7 +3,7 @@
 App.info({
   id: 'com.longevitybasics.app',
   name: 'Longevity Basics',
-  version: "1.0.3",
+  version: "1.0.4",
   description: 'Shortcut to a state of the art longevity strategy!',
   author: 'Mathias Brandt',
   email: 'hello@longevity-basics.com',
